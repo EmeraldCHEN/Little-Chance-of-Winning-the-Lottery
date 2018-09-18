@@ -59,19 +59,25 @@ namespace About_Lotto
                 count++;
                 if(result == 6 && x == Convert.ToInt32(lotto[6]))
                 {
-                    Console.WriteLine(" Div.1 ! Total prize: $" + (count * 2));
+                    Console.WriteLine("\n  Congradulation! You won! Total prize: $" + (count * 2));
                 }
                 else if(result == 6)
                 {
-                    Console.WriteLine(" Div.2 ! Total prize: $" + (count * 2));
+                    Console.WriteLine("\n  Congradulation! You won! Total prize: $" + (count * 2));
+                }
+                else if(result == 5)
+                {
+                    Console.WriteLine("\n  Congradulation! You won! Total prize: $" + (count * 2));
+                }
+                else if (result == 4)
+                {
+                    Console.WriteLine("\n  Congradulation! You won! Total prize: $" + (count * 2));
                 }
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine("\n   Better luck next time O(∩_∩)O ~");
                 }
-                // else if(result == 5 && x == Convert.ToInt32(lotto))
-
                 Console.ReadKey();
             }           
         }
